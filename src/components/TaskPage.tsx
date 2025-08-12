@@ -125,10 +125,10 @@ const TaskPage: React.FC = () => {
             ) : (
               <>
                 <div className="flex flex-col sm:flex-row sm:items-center flex-1 gap-1">
-                  <span className="font-medium text-base tracking-tight text-neutral-100 group-hover:text-primary transition-colors">
+                  <span className="font-medium text-base tracking-tight text-white group-hover:text-primary transition-colors">
                     {task.text}
                   </span>
-                  <span className="ml-0 sm:ml-4 text-xs text-neutral-400 group-hover:text-indigo-400 transition-colors">
+                  <span className="ml-0 sm:ml-4 text-xs text-white group-hover:text-indigo-400 transition-colors">
                     <svg className="inline mr-1 -mt-0.5" width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="5" fill="#6366f1"/><path d="M8 11h8M8 15h5" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>
                     {task.date}
                   </span>
