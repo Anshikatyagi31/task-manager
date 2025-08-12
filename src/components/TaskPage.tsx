@@ -125,7 +125,7 @@ const TaskPage: React.FC = () => {
             ) : (
               <>
                 <div className="flex flex-col sm:flex-row sm:items-center flex-1 gap-1">
-                  <span className="font-medium text-base tracking-tight text-white group-hover:text-primary transition-colors">
+                  <span className="font-medium text-base tracking-tight text-white group-hover:text-white transition-colors">
                     {task.text}
                   </span>
                   <span className="ml-0 sm:ml-4 text-xs text-white group-hover:text-indigo-400 transition-colors">
@@ -134,7 +134,7 @@ const TaskPage: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex gap-1 ml-2">
-                  <Button size="sm" variant="outline" className="rounded-lg px-4 border-primary/40 group-hover:border-primary" onClick={() => startEdit(task)}>Edit</Button>
+                  <Button size="sm" variant="outline" className="rounded-lg px-4 border-primary/40 group-hover:border-primary text-black" onClick={() => startEdit(task)}>Edit</Button>
                   <Button variant="destructive" size="sm" className="rounded-lg px-4" onClick={() => removeTask(task.id)}>Remove</Button>
                 </div>
               </>
